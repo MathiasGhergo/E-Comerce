@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
-import { CartWidget } from ".cartwidget";
+import { CartWidget } from './CartWidget';
 
 function NavBar() {
   const [searchTerm, setSearchTerm] = useState('');
