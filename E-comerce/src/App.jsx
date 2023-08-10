@@ -1,6 +1,8 @@
 import { useState } from 'react'
+import NavBar from './NavBar';
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import 'bootstrap/dist/css/bootstrap.css';
 import './App.css'
 
 function App() {
@@ -9,6 +11,7 @@ function App() {
   return (
     <>
       <div>
+      <NavBar />
         <a href="https://vitejs.dev" target="blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
