@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
 import  CartWidget from './CartWidget';
+import {Link, NavLink} from 'react-router-dom'
 
 function NavBar() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -17,9 +18,11 @@ function NavBar() {
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="mr-auto">
-        <Nav.Link href="#home">Inicio</Nav.Link>
-        <Nav.Link href="#link">Productos</Nav.Link>
-        <Nav.Link href="#about">Acerca de</Nav.Link>
+        <div className='bar'>
+        <NavLink to="./category/productos">Productos</NavLink>
+        <NavLink to="./category/mapa">Encontranos en...</NavLink>
+        <NavLink to='./category/Acerca de'>Sobre nosotros</NavLink>
+        </div>
       </Nav>
       <CartWidget />
       <Form onSubmit={handleSearch}>

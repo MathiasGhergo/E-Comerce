@@ -9,7 +9,6 @@ function App() {
   return (
     <div>
       <NavBar />
-      <h1>Jagues</h1>
       <Routes>
         <Route path="/" element={<ItemListContainer/>}/>
         <Route path="/Category:id" element={<ItemListContainer/>} />
