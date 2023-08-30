@@ -13,7 +13,7 @@ function NavBar() {
 
   return (
     <Navbar bg="light" expand="lg" className="px-5 py-3">
-    <Navbar.Brand href="#home">Arnolds</Navbar.Brand>
+    <Navbar.Brand href="#home">Jagues</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="mr-auto">
