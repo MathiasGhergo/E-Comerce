@@ -8,7 +8,7 @@ const products =[
     { id:"7", name: "Arizona", price: 5299 , category: "Hombre"},
     { id:"8", name: "Detroit", price: 6699 , category: "Hombre"},
 ];
-const getProduct =(id) => {
+const getproduct =(id) => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
           const product =products.find(p => p.id === id);
@@ -20,7 +20,7 @@ const getProduct =(id) => {
         }, 1000);
     });
 };
-export const getProducts =(category) => {
+export const getProducts = (category) => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             const productsFiltered = category
