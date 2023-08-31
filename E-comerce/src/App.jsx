@@ -2,8 +2,8 @@ import NavBar from './Components/navbar';
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 import { Routes, Route } from "react-router-dom";
-import ItemListContainer from "./components/ItemListContainer";
-import ItemDetailContainer from "./components/ItemDetailContainer";
+import ItemListContainer from "./Components/ItemListContainer";
+import ItemDetailContainer from "./Components/ItemDetailContainer";
 
 function App() {
   return (
