@@ -1,5 +1,4 @@
-import React from "react";
-import { propTypes } from "prop-types";
+import propTypes from "prop-types";
 
 const ItemDetail =({ item, isLoading }) => {
     if (isLoading){
@@ -22,6 +21,6 @@ const ItemDetail =({ item, isLoading }) => {
 ItemDetail.propTypes = {
     item: propTypes.object,
     isLoading : propTypes.bool,
-}
+};
 
 export default ItemDetail;
