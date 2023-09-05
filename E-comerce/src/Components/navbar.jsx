@@ -14,14 +14,13 @@ function NavBar() {
 
   return (
     <Navbar bg="light" expand="lg" className="px-5 py-3">
-    <Navbar.Brand href="#home">Jagues</Navbar.Brand>
+    <Navbar.Brand href="#home"><Link to='/'>Jagues</Link></Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="mr-auto">
         <div className='bar'>
-        <NavLink to="./category/productos">Productos</NavLink>
-        <NavLink to="./category/mapa">Encontranos en...</NavLink>
-        <NavLink to='./category/Acerca de'>Sobre nosotros</NavLink>
+        <NavLink to='/category/Mujer'>Fragancias Femeninas</NavLink>
+        <NavLink to='/category/Hombre'>Fragancias Masculinas</NavLink>
         </div>
       </Nav>
       <CartWidget />
